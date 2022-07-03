@@ -133,6 +133,18 @@ nav li:hover{
 }
 .home lord-icon{
   margin-top: 30%;
+  animation: muter .3s linear infinite;
+}
+@keyframes muter{
+  0%{
+    transform: rotate(0deg);
+  }
+  75{
+   transform: rotate(360deg); 
+  }
+  100%{
+    transform: rotate(0deg);
+  }
 }
 .home h2{
   font-family: 'Source Sans Pro', sans-serif;
@@ -161,7 +173,7 @@ nav li:hover{
   text-decoration: none;
 }
 .aboutUs{
-  height: 200vh;
+  height: 140vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -262,7 +274,7 @@ nav li:hover{
   margin-top: 10px;
   transform: translateY(67%);
   border-radius: 10px;
-  transition: .5s eas;
+  transition: .5s ease-in-out;
 }
 .container-about2.active{
   opacity: 1;
